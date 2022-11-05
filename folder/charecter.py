@@ -20,7 +20,7 @@ class Charecter:
         print("Выиграл")
         self.die = 1
     def stroke(self):
-        print('----------------')
+        print('-----------------')
     def take_damage(self,damage):
         self.health -= max(damage, 0)
     def attack(self, target):

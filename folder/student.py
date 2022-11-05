@@ -1,7 +1,7 @@
 import datetime
 class Student:
     name = ""
-    bornYear = 0000
+    bornYear = 0
     group = ""
     Ball = 0
     year = 0
