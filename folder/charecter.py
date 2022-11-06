@@ -27,7 +27,7 @@ class Charecter:
         target.take_damage(self.damage)
     def is_alive(self, health, target):
         if health <= 0:
-            print(f'{self.name} Умер')
+            print(f'{self.name} умер')
             target.win(self)
 
 

@@ -16,6 +16,7 @@ class Student:
               f' Год рождения: {self.bornYear}\n' \
               f' Группа: {self.group}\n' \
               f' Средний бал: {self.Ball}\n'
+
     def get_age(self, bornYear):
         year = datetime.date.today().year
         age = year - bornYear
