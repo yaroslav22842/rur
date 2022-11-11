@@ -2,7 +2,7 @@ class Charecter:
     name = ""
     damage = 1
     health = 100
-    defence = 0
+    defence = 1
 
     def __init__(self, name, health, damage, defence):
         self.name = name
