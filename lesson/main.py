@@ -3,7 +3,7 @@ from asassin import Assasin
 from ninja import Ninja
 import time
 a = input("your name> ")
-b = input("player 2 name> ")
+b = input("player2 name> ")
 player1 = Assasin(name=a,defence=11,damage=3,health=100)
 player2 = Ninja(name=b,defence=11,damage=2,health=100)
 admin = Charecter(name="admin", damage=100, defence=100,health=200 )

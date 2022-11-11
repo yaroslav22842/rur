@@ -1,8 +1,8 @@
 class Charecter:
     name = ""
-    damage = 1
-    health = 100
-    defence = 1
+    damage = 0
+    health = 0
+    defence = 0
 
     def __init__(self, name, health, damage, defence):
         self.name = name
