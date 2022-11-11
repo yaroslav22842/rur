@@ -3,32 +3,39 @@ class Charecter:
     damage = 1
     health = 100
     defence = 0
-    die = 0
-
 
     def __init__(self, name, health, damage, defence):
         self.name = name
         self.health = health
         self.damage = damage
         self.defence = defence
+        self.attaka = self.damage
     def __str__(self):
        return f'=={self.name}==\n' \
               f' Здоровье: {self.health}\n' \
-              f' Урон: {self.damage}\n' \
+              f' Урон: {self.attaka}\n' \
               f' Защита: {self.defence}\n'
-    def win(self):
-        print("Выиграл")
-        self.die = 1
+
+    def setDamage(self):
+        self.attaka = self.damage
+
     def stroke(self):
         print('-----------------')
     def take_damage(self,damage):
-        self.health -= max(damage, 0)
+        self.health -= max(damage, 1)
     def attack(self, target):
-        target.take_damage(self.damage)
-    def is_alive(self, health, target):
-        if health <= 0:
-            print(f'{self.name} умер')
-            target.win(self)
+        self.setDamage()
+
+        target.take_damage(self.attaka)
+    def is_alive(self):
+        return self.health < 0
+# if self.health < 0:
+#    print(f'{self.name} умер')
+
+    def heal_count (self):
+        self.heal = self.damage
+
+
 
 
 
